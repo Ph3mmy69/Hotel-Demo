@@ -1,0 +1,457 @@
+* {
+ margin: 0;
+ padding: 0;
+ font-family: 'Lato', sans-serif;
+}
+
+.header {
+ min-height: 100vh;
+ width: 100%;
+ background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)), url(./img/Header.jpg);
+ background-position: center;
+ background-size: cover;
+}
+nav img {
+ width: 300px;
+}
+
+nav {
+ display: flex;
+ justify-content: space-between;
+ /* padding: 2% 6%; */
+}
+
+.button {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, 80px);
+}
+
+button {
+ border: none;
+ padding: 10px 15px;
+ background-color: rgb(183, 115, 115);
+ border-radius: 20px;
+ font-size: 20px;
+ cursor: pointer;
+ font-family: cursive;
+}
+
+.nav-links {
+ flex: 1;
+ text-align: right;
+}
+
+.nav-links ul li {
+ list-style: none;
+ display: inline-block;
+ padding: 8px 15px;
+ position: relative;
+ margin-top: 5px;
+ /* border: 2px solid red; */
+ margin-right: 10px;
+}
+
+.nav-links ul li::after {
+content: '';
+width: 0%;
+height: 3px;
+background: green;
+display: block;
+margin: auto;
+transition: .5s;
+}
+
+.nav-links ul li:hover::after {
+ width: 100%;
+}
+.nav-links ul li a {
+ text-decoration: none;
+ color: rgb(214, 214, 214);
+ font-size: 22px;
+ font-weight: 600;
+}
+
+.text-box {
+ /* border: 2px solid red; */
+ width: 80%;
+ text-align: center;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+
+.text-box h1 {
+ font-size: 50px;
+}
+
+.text-box h3 {
+ font-size: 40px;
+}
+
+nav .fa-solid {
+ display: none;
+}
+
+/* ROOMS */
+
+ .title {
+ padding-top: 100px;
+ width: 90%;
+ margin: auto;
+ text-align: center;
+ /* background-color: red; */
+ padding-bottom: 100px;
+}
+
+.title {
+ font-size: 50px;
+ margin-bottom: 0px;
+}
+
+.row {
+ display: flex;
+ /* border: 1px solid red; */
+
+}
+.row2 {
+ display: flex;
+}
+
+.row a {
+ text-decoration: none;
+ color: black;
+}
+
+.row2 a {
+ text-decoration: none;
+ color: black;
+}
+
+.flex {
+ display: flex;
+ justify-content: space-between;
+}
+
+.roomSel {
+ display: flex;
+ justify-content: space-around;
+ padding: 20px 30px;
+ background-color: rgb(220, 214, 214);
+ margin: 17px 30px;
+ border-radius: 10px;
+ width: 100%;
+}
+
+.room {
+ width: 90%;
+ margin: auto;
+}
+
+.roomSel h2 {
+ font-weight: 600px;
+}
+
+.fa-chevron-right {
+ font-size: 25px;
+ position: relative;
+ top: 3px;
+ font-weight: 600;
+}
+
+.rum div img {
+ width: 900px;
+ height: 300px;
+}
+
+.rum {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+ grid-gap: 40px;
+}
+
+.sumRum {
+ width: 80%;
+ margin: auto;
+}
+
+
+.rum div img {
+ width: 100%;
+ border-radius: 10px;
+}
+
+div span h3 {
+ font-family: cursive;
+ font-weight: bold;
+
+}
+
+div span p {
+ font-weight: 500;
+}
+
+.footer {
+ margin: 80px 0 10px;
+ text-align: center;
+}
+
+.footer a {
+ color: grey;
+ padding: 0 20px;
+ font-size: 28px;
+}
+
+hr {
+ width: 80%;
+ height: 1px;
+ margin: auto;
+ border: 0;
+ background-color: #999;
+}
+
+.footer a:hover {
+ color: brown;
+}
+
+/* ---------ROOMS STYLING--------- */
+
+.container {
+ width: 80vw;
+ margin: auto;
+}
+
+.list-container {
+ margin-top: 50px;
+ /* display: flex; */
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.inner-circle >  h1 {
+ color: #333;
+ margin-bottom: 30px;
+ font-weight: 600;
+}
+
+.house {
+ display: flex;
+ justify-content: space-between;
+ align-items: left;
+ flex-wrap: wrap;
+ padding: 30px 0;
+ border-top: 1px solid #ccc;
+}
+
+
+.house-info {
+ /* flex-basis: 58%; */
+ margin-right: 180px;
+ color: grey;
+}
+
+.house-info h1,h3,h4 {
+ padding: 1px 0;
+
+}
+
+.house-info i {
+ color: brown;
+}
+
+.house-img img {
+ width: 100px;
+ border-radius: 12px;
+}
+
+.house-price {
+ text-align: right;
+}
+
+.house-price h4 {
+ font-size: 20px;
+}
+
+
+.house-price span {
+ font-size: 13px;
+ font-weight: 500;
+}
+
+.pagination {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 40px 0;
+}
+
+.pagination span{
+ margin: 10px 8px;
+ line-height: 40px;
+ text-align: center;
+ height: 40px;
+ cursor: pointer;
+ font-size: 1.2rem;
+ border-radius: 50%;
+}
+
+.pagination .current::after{
+ content: '';
+width: 100%;
+height: 3px;
+background: brown;
+display: block;
+margin: auto;
+transition: .5s;
+margin-top: -10px;
+}
+
+
+/* ---------------HOUSE STYLING----------- */
+
+.container-house {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ /* align-items: center; */
+ justify-content: center;
+}
+
+.swiper {
+ width: 80%;
+ height: fit-content;
+}
+
+.swiper-slide img {
+ width: 100%;
+ height: 380px;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+ color: white;
+}
+
+.swiper .swiper-pagination-bullet-active {
+ background: white;
+}
+
+.house-details {
+ padding: 0 12%;
+}
+
+.house-title {
+ margin-top: 50px;
+}
+
+.house-title h1 {
+ font-weight: 600;
+}
+
+.house-title .row {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ margin: 10px 0;
+}
+
+.house-title span {
+ margin: 0 20px;
+}
+
+.house-title i {
+ color: red;
+ font-size: 14px;
+}
+
+.gallery {
+ display: grid;
+ grid-gap: 14px;
+}
+
+.gallery div img {
+ width: 100%;
+ display: block;
+ border-radius: 10px;
+ grid-template-areas: 'first first . .' 'first first . . ';
+ margin: 20px 0;
+}
+
+.gallery-img-1 {
+ grid-area: first;
+}
+
+@media (max-width: 750px) {
+
+
+.text-box h1 {
+ font-size: 35px;
+}
+
+.text-box h3 {
+ font-size: 25px;
+}
+
+.nav-links ul li {
+ display: block;
+}
+
+.nav-links {
+ position: absolute;
+ background: linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), transparent;
+ height: 100vh;
+ width: 200px;
+ top: 0;
+ right: -200px;
+ text-align: left;
+ z-index: 2;
+ transition: 1s;
+}
+
+nav .fa-solid {
+ display: block;
+ color: #fff;
+ font-size: 20px;
+ margin: 10px;
+ cursor: pointer;
+ /* border: 1px solid red; */
+ /* width: 30%; */
+}
+
+.nav-links ul {
+ padding:30px;
+}
+.house {
+ display: flex;
+ flex-direction: column;
+}
+
+.house-img, .house-info {
+ flex-basis: 100%;
+}
+
+.house-info h1 {
+ font-size: 18px;
+ font-weight: 600;
+}
+
+.house-info h3 {
+ font-size: 15px;
+ font-weight: 600;
+}
+
+.house-info > h4 {
+ font-size: 15px;
+}
+
+.house-info i {
+ font-size: 10px;
+}
+
+.house-price h4{
+ /* margin-left: 50px; */
+ font-size: 15px;
+ font-weight: bold;
+}
+}
